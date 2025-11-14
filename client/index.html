@@ -19,10 +19,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <script>
+      // Conditionally load analytics only if endpoint is provided
+      const analyticsEndpoint = '%VITE_ANALYTICS_ENDPOINT%';
+      const analyticsWebsiteId = '%VITE_ANALYTICS_WEBSITE_ID%';
+      if (analyticsEndpoint && analyticsWebsiteId && analyticsEndpoint.trim() !== '') {
+        const script = document.createElement('script');
+        script.defer = true;
+        script.src = analyticsEndpoint + '/umami';
+        script.setAttribute('data-website-id', analyticsWebsiteId);
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 
 </html>
