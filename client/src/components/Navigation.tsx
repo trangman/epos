@@ -21,7 +21,7 @@ export default function Navigation() {
             <img 
               src="/logowhite.svg" 
               alt="EPOS Logo" 
-              className="h-8 w-auto"
+              className="h-6 w-auto"
             />
           </a>
         </Link>

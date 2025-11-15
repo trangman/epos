@@ -6,11 +6,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-500 rounded flex items-center justify-center shadow-lg shadow-cyan-500/50">
-                <span className="text-white font-bold text-sm">E</span>
-              </div>
-              <span className="text-cyan-300 font-bold">EPOS</span>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/logowhite.svg" 
+                alt="EPOS Logo" 
+                className="h-6 w-auto"
+              />
             </div>
             <p className="text-sm">Global payment solutions for modern businesses.</p>
           </div>
