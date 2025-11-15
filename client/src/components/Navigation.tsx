@@ -17,11 +17,12 @@ export default function Navigation() {
     <nav className="fixed top-0 w-full bg-gradient-to-r from-slate-950 via-blue-950 to-slate-950 backdrop-blur z-50 border-b border-cyan-400/50 shadow-lg shadow-cyan-500/20">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
-          <a className="flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-500 rounded flex items-center justify-center shadow-lg shadow-cyan-500/50">
-              <span className="text-white font-bold text-sm">E</span>
-            </div>
-            <span className="text-white font-bold text-lg">EPOS</span>
+          <a className="flex items-center cursor-pointer">
+            <img 
+              src="/logowhite.svg" 
+              alt="EPOS Logo" 
+              className="h-8 w-auto"
+            />
           </a>
         </Link>
 
