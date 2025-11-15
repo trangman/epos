@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
 
 export default function WhyUs() {
   const benefits = [
@@ -69,6 +71,13 @@ export default function WhyUs() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEO
+        title={pages["why-us"].title}
+        description={pages["why-us"].description}
+        keywords={pages["why-us"].keywords}
+        url={getFullUrl(pages["why-us"].path)}
+        structuredData={getStructuredData("why-us", getFullUrl(pages["why-us"].path))}
+      />
       <Navigation />
 
       {/* Hero Section */}

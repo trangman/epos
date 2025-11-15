@@ -3,6 +3,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
+import SEO from "@/components/SEO";
+import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,6 +41,13 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEO
+        title={pages.contact.title}
+        description={pages.contact.description}
+        keywords={pages.contact.keywords}
+        url={getFullUrl(pages.contact.path)}
+        structuredData={getStructuredData("contact", getFullUrl(pages.contact.path))}
+      />
       <Navigation />
 
       {/* Hero Section */}

@@ -3,6 +3,8 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
 
 export default function Home() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
@@ -140,6 +142,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEO
+        title={pages.home.title}
+        description={pages.home.description}
+        keywords={pages.home.keywords}
+        url={getFullUrl(pages.home.path)}
+        structuredData={getStructuredData("home", getFullUrl(pages.home.path))}
+      />
       <Navigation />
 
       {/* Hero Section */}

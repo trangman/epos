@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
+import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
 
 export default function About() {
   const values = [
@@ -28,6 +30,13 @@ export default function About() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEO
+        title={pages.about.title}
+        description={pages.about.description}
+        keywords={pages.about.keywords}
+        url={getFullUrl(pages.about.path)}
+        structuredData={getStructuredData("about", getFullUrl(pages.about.path))}
+      />
       <Navigation />
 
       {/* Hero Section */}
