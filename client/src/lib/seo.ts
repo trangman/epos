@@ -14,15 +14,15 @@ export const siteConfig = {
   name: "EPOS Payments",
   url: "https://epos.com", // Update with actual domain
   description: "EPOS provides comprehensive global payment solutions, multi-currency support, and advanced financial services.",
-  defaultImage: "/logowhite.svg",
+  defaultImage: "/favicon.png", // Use PNG for better Open Graph support
   twitterHandle: "@epospayments", // Update if available
 };
 
 export const pages: Record<string, PageSEO> = {
   home: {
-    title: "EPOS Payments - Global Payment Solutions | Payments, FX & Financial Services",
-    description: "EPOS provides comprehensive global payment solutions, multi-currency support, and advanced financial services. Get merchant acquiring, FX, cards, and wealth management services.",
-    keywords: "payment solutions, global payments, merchant acquiring, foreign exchange, FX, payment processing, financial services, multi-currency, EPOS, payment gateway",
+    title: "EPOS Payments | Global Payment Solutions, FX & Financial Services for Businesses",
+    description: "Transform your business with EPOS global payment solutions. Get merchant acquiring, multi-currency FX, card issuance, and wealth management services. Fast integration, worldwide coverage, and expert support. Start your free consultation today.",
+    keywords: "payment solutions, global payments, merchant acquiring, foreign exchange, FX, payment processing, financial services, multi-currency, EPOS, payment gateway, card issuance, wealth management, payment services",
     path: "/",
     type: "website",
   },
