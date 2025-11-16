@@ -44,9 +44,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                  <a href="#" className="hover:text-cyan-300 transition">
-                  Blog
-                </a>
+                <Link href="/blog">
+                  <a className="hover:text-white transition">Blog</a>
+                </Link>
               </li>
               <li>
                 <Link href="/contact">
@@ -59,19 +59,19 @@ export default function Footer() {
             <h4 className="text-cyan-300 font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-white transition">
-                  Privacy
-                </a>
+                <Link href="/privacy">
+                  <a className="hover:text-white transition">Privacy</a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
-                  Terms
-                </a>
+                <Link href="/terms">
+                  <a className="hover:text-white transition">Terms</a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition">
-                  Compliance
-                </a>
+                <Link href="/compliance">
+                  <a className="hover:text-white transition">Compliance</a>
+                </Link>
               </li>
             </ul>
           </div>

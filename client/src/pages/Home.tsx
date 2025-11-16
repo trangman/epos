@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -167,9 +168,13 @@ export default function Home() {
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               EPOS provides comprehensive global payment solutions, multi-currency support, and advanced financial services designed to help your business grow and expand internationally.
             </p>
-            <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold text-lg px-8 py-6 shadow-lg shadow-cyan-500/50">
-              Get Free Consultation
-            </Button>
+            <Link href="/contact">
+              <a>
+                <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold text-lg px-8 py-6 shadow-lg shadow-cyan-500/50">
+                  Get Free Consultation
+                </Button>
+              </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -294,9 +299,13 @@ export default function Home() {
           <p className="text-xl text-gray-300 mb-8">
             Join businesses worldwide using EPOS for their global payment and financial needs.
           </p>
-          <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold text-lg px-8 py-6 shadow-lg shadow-cyan-500/50">
-            Get Free Consultation
-          </Button>
+          <Link href="/contact">
+            <a>
+              <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold text-lg px-8 py-6 shadow-lg shadow-cyan-500/50">
+                Get Free Consultation
+              </Button>
+            </a>
+          </Link>
         </div>
       </section>
 

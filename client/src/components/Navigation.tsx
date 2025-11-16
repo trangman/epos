@@ -33,9 +33,13 @@ export default function Navigation() {
               <a className="text-cyan-100/70 hover:text-cyan-300 transition">{item.label}</a>
             </Link>
           ))}
-          <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold shadow-lg shadow-cyan-500/50">
-            Get Started
-          </Button>
+          <Link href="/contact">
+            <a>
+              <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold shadow-lg shadow-cyan-500/50">
+                Get Started
+              </Button>
+            </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -60,9 +64,13 @@ export default function Navigation() {
               </a>
             </Link>
           ))}
-          <Button className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold shadow-lg shadow-cyan-500/50">
-            Get Started
-          </Button>
+          <Link href="/contact">
+            <a onClick={() => setMobileMenuOpen(false)}>
+              <Button className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold shadow-lg shadow-cyan-500/50">
+                Get Started
+              </Button>
+            </a>
+          </Link>
         </div>
       )}
     </nav>

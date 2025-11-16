@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
 
@@ -181,9 +182,13 @@ export default function Services() {
           <p className="text-xl text-gray-300 mb-8">
             Let our experts help you find the perfect solution for your business.
           </p>
-          <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold text-lg px-8 py-6 shadow-lg shadow-cyan-500/50">
-            Get Free Consultation
-          </Button>
+          <Link href="/contact">
+            <a>
+              <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold text-lg px-8 py-6 shadow-lg shadow-cyan-500/50">
+                Get Free Consultation
+              </Button>
+            </a>
+          </Link>
         </div>
       </section>
 
