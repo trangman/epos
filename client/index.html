@@ -31,6 +31,26 @@
   </head>
 
   <body>
+    <!-- Hidden form for Netlify form detection (required for SPAs) -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="firstName" />
+      <input type="text" name="lastName" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="company" />
+      <input type="url" name="website" />
+      <select name="interest">
+        <option value="payments">EPOS Payments</option>
+        <option value="connect">EPOS Connect</option>
+        <option value="fx">EPOS FX</option>
+        <option value="cards">EPOS Cards</option>
+        <option value="wealth">EPOS Wealth</option>
+        <option value="hpp">EPOS HPP</option>
+      </select>
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
