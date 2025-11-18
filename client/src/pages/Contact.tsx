@@ -136,7 +136,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold mb-2 text-gray-900">Office Location</h3>
               <p className="text-gray-600 mb-2">Our office is located in London.</p>
               <p className="text-cyan-400 font-semibold">
-                100 Bishopsgate<br />London, EC2N 4AG
+                Level 39, One Canada Square<br />Canary Wharf<br />London E14 5AB
               </p>
             </div>
           </div>
