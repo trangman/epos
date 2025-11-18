@@ -66,7 +66,7 @@ export function getStructuredData(page: string, fullUrl: string) {
     description: siteConfig.description,
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+44-20-1234-5678",
+      telephone: "+44-7520-654-325",
       contactType: "Customer Service",
       areaServed: "Worldwide",
       availableLanguage: "English",

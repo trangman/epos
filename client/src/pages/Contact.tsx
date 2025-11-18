@@ -124,8 +124,8 @@ export default function Contact() {
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-900">Call Us</h3>
               <p className="text-gray-600 mb-2">Available Mon - Fri, 9am - 6pm GMT.</p>
-              <a href="tel:+441234567890" className="text-cyan-400 hover:text-cyan-300 font-semibold">
-                +44 (0) 20 1234 5678
+              <a href="tel:+447520654325" className="text-cyan-400 hover:text-cyan-300 font-semibold">
+                +44 7520 654 325
               </a>
             </div>
 
@@ -219,7 +219,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
-                    placeholder="+44 123 456 7890"
+                    placeholder="+44 7520 654 325"
                   />
                 </div>
               </div>

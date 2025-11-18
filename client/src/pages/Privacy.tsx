@@ -277,8 +277,8 @@ export default function Privacy() {
                   </p>
                   <p className="mb-2">
                     <strong>Phone:</strong>{" "}
-                    <a href="tel:+442012345678" className="text-cyan-500 hover:text-cyan-400 underline">
-                      +44 (0) 20 1234 5678
+                    <a href="tel:+447520654325" className="text-cyan-500 hover:text-cyan-400 underline">
+                      +44 7520 654 325
                     </a>
                   </p>
                 </div>
