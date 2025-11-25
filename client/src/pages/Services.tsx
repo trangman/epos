@@ -55,7 +55,7 @@ export default function Services() {
               Payments, FX, Compliance & Wealth Solutions
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Explore the solutions outlined in the EPOS 2025 program, crafted with Tier 1 banks, EMIs, and specialist partners.
+              Explore the solutions outlined in the EPOS Payments program, crafted with Tier 1 banks, EMIs, and specialist partners.
             </p>
           </div>
         </div>

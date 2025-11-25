@@ -36,17 +36,17 @@ export default function Home() {
 
   const processSteps = [
     {
-      number: "1",
+      number: "One",
       title: "Qualification",
       description: "We listen to understand each client's demands and capture the details we need through a structured questionnaire."
     },
     {
-      number: "2",
+      number: "Two",
       title: "Introduction",
       description: "After review, we introduce you to the financial institutions best aligned with your profile, risk appetite, and objectives."
     },
     {
-      number: "3",
+      number: "Three",
       title: "Continued Assistance",
       description: "We remain involved to ensure you secure the right mix of solutions and stay supported as your business evolves."
     }
@@ -146,7 +146,7 @@ export default function Home() {
       <section id="why-us" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">Why Choose EPOS?</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Why Choose EPOS Payments?</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               We offer unique advantages that set us apart from the competition.
             </p>
@@ -176,8 +176,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             {processSteps.map((step, idx) => (
               <div key={idx} className="relative">
-                <div className="bg-gradient-to-br from-amber-400 to-amber-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-black font-bold text-2xl">{step.number}</span>
+                <div className="text-4xl font-bold text-gray-900 text-center mb-4">
+                  {step.number}
                 </div>
                 <h3 className="font-bold text-center mb-2 text-gray-900">{step.title}</h3>
                 <p className="text-sm text-gray-600 text-center">{step.description}</p>

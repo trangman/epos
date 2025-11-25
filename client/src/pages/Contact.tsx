@@ -113,8 +113,8 @@ export default function Contact() {
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-900">Email Us</h3>
               <p className="text-gray-600 mb-2">We're here to provide solutions.</p>
-              <a href="mailto:contact@epos.com" className="text-cyan-400 hover:text-cyan-300 font-semibold">
-                contact@epos.com
+              <a href="mailto:info@epospayments.com" className="text-cyan-400 hover:text-cyan-300 font-semibold">
+                info@epospayments.com
               </a>
             </div>
 
@@ -172,7 +172,7 @@ export default function Contact() {
               {submitStatus === "error" && (
                 <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
                   <p className="font-semibold">Oops! Something went wrong.</p>
-                  <p className="text-sm">Please try again or contact us directly at contact@epos.com</p>
+                  <p className="text-sm">Please try again or contact us directly at info@epospayments.com</p>
                 </div>
               )}
               <div className="grid md:grid-cols-2 gap-6">

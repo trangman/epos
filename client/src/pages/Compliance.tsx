@@ -59,8 +59,8 @@ export default function Compliance() {
             </p>
             <p className="text-gray-600 mb-6">
               For more information about our compliance practices, please contact us at{" "}
-              <a href="mailto:compliance@epos.com" className="text-cyan-500 hover:text-cyan-400">
-                compliance@epos.com
+              <a href="mailto:compliance@epospayments.com" className="text-cyan-500 hover:text-cyan-400">
+                compliance@epospayments.com
               </a>
             </p>
           </div>
