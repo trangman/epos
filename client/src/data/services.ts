@@ -58,13 +58,10 @@ export const serviceOfferings: ServiceOffering[] = [
     ]
   },
   {
-    title: "Wealth Management",
+    title: "Contact Us for Further Information",
     description:
-      "Wealth management services adhere to IOSCO principles, enabling the distribution, issuance, fractionalization, or unitization of securities across traditional and digital channels.",
-    features: [
-      "Global issuance and distribution of securities",
-      "Support for traditional, digital, and tokenized assets"
-    ]
+      "Have questions about our services or need more information? Get in touch with our team to learn how EPOS can help transform your payment and financial operations.",
+    features: []
   }
 ];
 

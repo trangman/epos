@@ -146,7 +146,7 @@ export default function Home() {
       <section id="why-us" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">Why Choose EPOS Payments?</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Why Choose EPOS?</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               We offer unique advantages that set us apart from the competition.
             </p>

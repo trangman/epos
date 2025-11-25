@@ -69,14 +69,24 @@ export default function Services() {
               <div key={idx} className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition border border-cyan-400/30 hover:border-cyan-500/50 hover:shadow-cyan-500/20">
                 <h3 className="text-2xl font-bold mb-3 text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, fidx) => (
-                    <li key={fidx} className="flex items-start gap-3 text-gray-700">
-                      <span className="text-cyan-500 font-bold mt-1">•</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                {service.features.length > 0 ? (
+                  <ul className="space-y-3">
+                    {service.features.map((feature, fidx) => (
+                      <li key={fidx} className="flex items-start gap-3 text-gray-700">
+                        <span className="text-cyan-500 font-bold mt-1">•</span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <Link href="/contact">
+                    <a>
+                      <Button className="w-full bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-white font-bold mt-4">
+                        Contact Us
+                      </Button>
+                    </a>
+                  </Link>
+                )}
               </div>
             ))}
           </div>
