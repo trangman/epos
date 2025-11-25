@@ -8,24 +8,24 @@ import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
 export default function About() {
   const values = [
     {
-      title: "Innovation",
-      description: "We continuously innovate to provide cutting-edge payment and financial solutions."
+      title: "Strategic Connectivity",
+      description: "We connect clients with Tier 1 banks, asset managers, FX brokers, EMIs, processing houses, and gateways."
     },
     {
-      title: "Reliability",
-      description: "Our infrastructure is built on Tier 1 banking partnerships ensuring maximum uptime and security."
+      title: "Institutional Trust",
+      description: "Our partners are FCA regulated, connected to the Bank of England via Faster Payments and the ECB for Instant SEPA."
     },
     {
-      title: "Compliance",
-      description: "We maintain the highest standards of regulatory compliance across all jurisdictions."
+      title: "Currency Coverage",
+      description: "Real-time tracking for 40+ collection currencies and 100+ payout currencies keeps enterprises agile."
     },
     {
-      title: "Partnership",
-      description: "We view our clients as partners, committed to their long-term success and growth."
+      title: "Client Advocacy",
+      description: "Every engagement starts with listening, documenting requirements, and tailoring the right institutional match."
     },
     {
-      title: "Expertise",
-      description: "Our team brings decades of combined experience in payments and financial services."
+      title: "Experience",
+      description: "Our team brings over 10 years of working alongside fintechs and banks worldwide."
     }
   ];
 
@@ -51,10 +51,10 @@ export default function About() {
           <div className="max-w-3xl">
             <p className="text-cyan-300 font-semibold mb-4 text-lg tracking-widest">ABOUT EPOS</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              About
+              Connecting Ambitious Businesses to Tier 1 Financial Partners
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              EPOS is an independent financial services provider specializing in comprehensive payment solutions, foreign exchange, and financial services. Our goal is to make the world of finance and payments more accessible to our clients.
+              EPOS specializes in delivering consulting-led payment solutions by aligning clients with prestigious institutions capable of optimizing FX, payments, and treasury workflows.
             </p>
           </div>
         </div>
@@ -65,21 +65,36 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">Simple Solutions for Complex Problems</h2>
+              <h2 className="text-4xl font-bold mb-6 text-gray-900">Simple Solutions for Complex Payment Demands</h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                With our extensive network of banks, EMIs, payment gateways, and other financial institutions, we can provide you with easy access to banking services, local payment solutions, and business finance options. These resources are designed to help your business thrive and expand on an international scale.
+                EPOS delivers a comprehensive consulting service with a unique approach: we connect clients directly with Tier 1 banks, asset managers, FX brokers, EMIs, processing houses, and payment gateways. The result is a curated, best-fit path to optimizing payment workflows, reducing FX costs, and managing currency exposure.
               </p>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Originally established to provide innovative payment solutions, we have since expanded our reach to create a global network of diverse and trusted partners. This expansion allows us to serve clients from virtually any industry.
+                Acting as a strategic partner for financial institutions, we expand institutional relations and facilitate growth as an external business development force.
+              </p>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                EPOS is your one stop for payments: delivering local currency to bank accounts in most markets, keeping funds safe, secure, and segregated through trusted banks such as Barclays, CITI, RBS, DBS, and HSBC. Our partners are UK-based EMIs regulated by the FCA, connected to the Bank of England via Faster Payments, and to the European Central Bank for Instant SEPA, while also enabling SWIFT.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Our experience enables us to navigate complex jurisdictional areas and deliver effective solutions. Choose EPOS for simplified solutions to complex financial needs. Let us help you achieve your business goals and unlock new opportunities for success.
+                With reliable, real-time tracking across 40 collection currencies and 100 payout currencies, our team applies more than a decade of experience to listen, understand, and deliver the right solution for every business we support.
               </p>
             </div>
             <div className="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg h-96 flex items-center justify-center shadow-lg shadow-cyan-500/30">
-              <div className="text-center text-white">
-                <p className="text-6xl font-bold mb-2">10+</p>
-                <p className="text-xl">Years of Experience</p>
+              <div className="text-center text-white space-y-8">
+                <div>
+                  <p className="text-5xl font-bold mb-1">10+</p>
+                  <p className="text-base uppercase tracking-widest">Years of Experience</p>
+                </div>
+                <div className="grid grid-cols-2 gap-8">
+                  <div>
+                    <p className="text-4xl font-bold mb-1">40+</p>
+                    <p className="text-sm uppercase tracking-widest">Collection Currencies</p>
+                  </div>
+                  <div>
+                    <p className="text-4xl font-bold mb-1">100+</p>
+                    <p className="text-sm uppercase tracking-widest">Payout Currencies</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

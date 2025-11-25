@@ -29,7 +29,7 @@ export default function Compliance() {
               Compliance & Regulatory Standards
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              EPOS Payments maintains the highest standards of regulatory compliance across all jurisdictions.
+              Provide fast-track onboarding manages customer requirements and risk efficiently with extensive AML and KYC coverage.
             </p>
           </div>
         </div>
@@ -41,17 +41,21 @@ export default function Compliance() {
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Commitment to Compliance</h2>
             <p className="text-gray-600 mb-6">
-              EPOS Payments is committed to maintaining the highest standards of regulatory compliance and adhering to international financial regulations. We operate in accordance with:
+              EPOS delivers Provide fast-track onboarding, a compliance-first framework that manages customer requirements and risk with speed and precision. The program adheres to standards from the Financial Action Task Force (FATF), Wolfsberg Group (FCCQ and BCCQ), and regulators across the markets where our partners operate.
             </p>
-            <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
-              <li>Anti-Money Laundering (AML) regulations</li>
-              <li>Know Your Customer (KYC) requirements</li>
-              <li>FATF (Financial Action Task Force) standards</li>
-              <li>Local regulatory requirements across all supported markets</li>
-              <li>Data protection and privacy regulations (GDPR, etc.)</li>
-            </ul>
             <p className="text-gray-600 mb-6">
-              Our compliance framework is continuously updated to reflect changes in regulatory requirements and industry best practices.
+              Designed for fintechs, financial institutions, and trust service providers, Provide fast-track onboarding features an audited AML program issued from an A-class jurisdiction and is compatible across markets.
+            </p>
+            <div className="mb-6">
+              <h3 className="text-2xl font-semibold mb-4 text-gray-900">Key Features</h3>
+              <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>Automated AML/CTF/ATF compliance workflows tailored to each customer journey</li>
+                <li>Real-time transaction monitoring and risk assessment for smarter decisioning</li>
+                <li>End-to-end customer lifecycle management that accelerates onboarding</li>
+              </ul>
+            </div>
+            <p className="text-gray-600 mb-6">
+              Our compliance specialists continuously update controls, documentation, and monitoring practices to reflect regulatory changes, ensuring that every engagement meets the expectations of regulators and banking partners.
             </p>
             <p className="text-gray-600 mb-6">
               For more information about our compliance practices, please contact us at{" "}

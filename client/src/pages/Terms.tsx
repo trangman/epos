@@ -29,7 +29,7 @@ export default function Terms() {
               Terms of Service
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Please read these terms carefully before using our services.
+              Please read these statements carefully before using our services.
             </p>
           </div>
         </div>
@@ -39,18 +39,28 @@ export default function Terms() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">Terms of Service</h2>
-            <p className="text-gray-600 mb-4">
-              <strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">Disclaimer</h2>
+            <p className="text-gray-600 mb-6 font-semibold uppercase">
+              No investment, trading, or financial advice provided.
             </p>
             <p className="text-gray-600 mb-6">
-              These terms of service are currently being updated. Please check back soon for our complete terms of service that outline the terms and conditions for using EPOS Payments' services.
+              None of the data on this site is intended as investment, trading, or financial advice of any kind and is purely informative. The data and content published here should not be regarded as accurate real-time market values, and EPOS Payments accepts no liability for losses incurred by relying on any information contained on this website.
             </p>
             <p className="text-gray-600 mb-6">
-              If you have any questions about our terms of service, please contact us at{" "}
+              Any opinions, phone calls, WhatsApp chats, emails, messages, news, research, analysis, prices, or other information contained on this website are provided as general market information for educational and entertainment purposes only. They do not constitute investment, trading, or financial advice and therefore are not regulated by any banks. This website should not be considered a substitute for independent market research before making trading, investment, or financial decisions.
+            </p>
+            <p className="text-gray-600 mb-6">
+              EPOS Payments (operating with the digital brand "EPOS") does not provide personalized investment, trading, or financial advice and never provides personalized recommendations of any sort. EPOS Payments does not provide ratings on financial instruments nor personalized financial advice. Opinions, market data, recommendations, or other informative content posted on www.epospayments.com are subject to change at any time without notice.
+            </p>
+            <p className="text-gray-600 mb-6">
+              EPOS Payments accepts no liability for any loss or damage, including without limitation any loss of profit, which may arise directly or indirectly from the use of or reliance on our posted content or email newsletter. Comments made by any person involved in or affiliated with the company, including directors, are their personal opinions and should be treated as such.
+            </p>
+            <p className="text-gray-600">
+              Always seek appropriate investment, trading, or financial advice from licensed professionals. For specific legal questions, contact{" "}
               <a href="mailto:legal@epos.com" className="text-cyan-500 hover:text-cyan-400">
                 legal@epos.com
               </a>
+              .
             </p>
           </div>
         </div>

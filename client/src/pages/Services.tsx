@@ -6,66 +6,10 @@ import { useState } from "react";
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
+import { serviceOfferings } from "@/data/services";
 
 export default function Services() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
-
-  const services = [
-    {
-      title: "EPOS Payments",
-      description: "One stop for payments, providing comprehensive global payment network. Facilitates local currency delivery to bank accounts in most markets.",
-      features: [
-        "Local and cross border payment solutions",
-        "Multi-currency support with integrated FX",
-        "Merchant acquiring for Visa, Mastercard and UnionPay"
-      ]
-    },
-    {
-      title: "EPOS Connect",
-      description: "Fast-track onboarding system designed to manage customer requirements and risk efficiently with extensive AML compliance.",
-      features: [
-        "Automated AML/CTF/ATF compliance workflows",
-        "Real-time transaction monitoring and risk assessment",
-        "End-to-end customer lifecycle management"
-      ]
-    },
-    {
-      title: "EPOS FX",
-      description: "Multi-currency foreign exchange with physical delivery across markets, providing deep liquidity for instant exchange and delivery.",
-      features: [
-        "Real-time FX across global markets",
-        "OTC trading for tailored currency solutions",
-        "Speed, transparency and financial flexibility"
-      ]
-    },
-    {
-      title: "EPOS Cards",
-      description: "Global issuance of Mastercard and Visa card programs including debit, credit, and prepaid cards in multi-currency options.",
-      features: [
-        "Global issuance of Visa and Mastercard programs",
-        "Multi-currency and single-currency card options",
-        "Virtual and physical cards"
-      ]
-    },
-    {
-      title: "EPOS Wealth",
-      description: "Wealth management services adhering to IOSCO principles, enabling distribution and issuance of securities.",
-      features: [
-        "Global issuance and distribution of securities",
-        "Support for traditional, digital, and tokenized assets",
-        "IOSCO compliant framework"
-      ]
-    },
-    {
-      title: "EPOS HPP",
-      description: "Hosted Payment Page allowing merchants to accept various payment methods with easy integration.",
-      features: [
-        "Easy integration into existing platforms",
-        "Support for card payments, bank wires, and Web3",
-        "Seamless transaction experience"
-      ]
-    }
-  ];
 
   const faqs = [
     {
@@ -108,10 +52,10 @@ export default function Services() {
           <div className="max-w-3xl">
             <p className="text-cyan-300 font-semibold mb-4 text-lg tracking-widest">OUR SERVICES</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Comprehensive Payment & Financial Solutions
+              Payments, FX, Compliance & Wealth Solutions
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Explore our full suite of services designed to meet the diverse needs of businesses worldwide.
+              Explore the solutions outlined in the EPOS 2025 program, crafted with Tier 1 banks, EMIs, and specialist partners.
             </p>
           </div>
         </div>
@@ -121,7 +65,7 @@ export default function Services() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, idx) => (
+            {serviceOfferings.map((service, idx) => (
               <div key={idx} className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition border border-cyan-400/30 hover:border-cyan-500/50 hover:shadow-cyan-500/20">
                 <h3 className="text-2xl font-bold mb-3 text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>

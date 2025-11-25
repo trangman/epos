@@ -8,47 +8,42 @@ import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
 export default function WhyUs() {
   const benefits = [
     {
-      title: "Comprehensive Solutions",
-      description: "Access a full suite of payment and financial services designed to meet diverse business needs across industries and geographies."
+      title: "Tier 1 Access",
+      description: "Leverage curated introductions to Tier 1 banks, asset managers, FX brokers, EMIs, and gateways that align with your risk profile."
     },
     {
-      title: "Global Reach",
-      description: "Our extensive network spans multiple markets and currencies, enabling seamless international transactions and local compliance."
+      title: "Institutional Partnerships",
+      description: "We act as an external business development arm for financial institutions, deepening trusted relationships on your behalf."
     },
     {
-      title: "Advanced Compliance",
-      description: "Robust AML/KYC frameworks ensure regulatory compliance and risk management across all jurisdictions and transaction types."
+      title: "Regulated Infrastructure",
+      description: "Engage FCA-regulated partners connected to the Bank of England via Faster Payments and the ECB for Instant SEPA, with SWIFT reach."
     },
     {
-      title: "Expert Support",
-      description: "Dedicated team with deep expertise in payments, fintech, and financial services ready to support your business growth."
+      title: "Global Currency Delivery",
+      description: "Collect funds in 40+ currencies and pay out in 100+ currencies with real-time tracking via our partners' global networks."
     },
     {
-      title: "Flexible Integration",
-      description: "Seamless integration with existing systems and platforms, designed for businesses of all sizes and technical capabilities."
+      title: "Specialist Guidance",
+      description: "Our consultants bring over a decade of experience in FX, payments, and fintech, tailoring solutions through structured discovery."
     }
   ];
 
   const processSteps = [
     {
       number: "01",
-      title: "Consultation",
-      description: "Discuss your payment and financial service requirements with our expert team."
+      title: "Qualification",
+      description: "We listen to each client's demands and standardize requirements with a detailed questionnaire."
     },
     {
       number: "02",
-      title: "Assessment",
-      description: "We evaluate your business needs and identify the best EPOS solutions for you."
+      title: "Introduction",
+      description: "We arrange introductions to the institutions whose acceptance criteria, appetite, and capabilities best match your profile."
     },
     {
       number: "03",
-      title: "Proposal",
-      description: "Receive a tailored proposal with recommended services and implementation timeline."
-    },
-    {
-      number: "04",
-      title: "Integration",
-      description: "Our team guides you through seamless integration and configuration of selected services."
+      title: "Continued Assistance",
+      description: "We stay engaged to ensure you secure the right mix of solutions and remain supported as your business evolves."
     }
   ];
 
@@ -92,10 +87,10 @@ export default function WhyUs() {
           <div className="max-w-3xl">
             <p className="text-cyan-300 font-semibold mb-4 text-lg tracking-widest">WHY CHOOSE EPOS</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Uncomplicate Global Payments and Unlock Smarter Financial Partnerships
+              Unlock Tier 1 Payment, FX, and Compliance Relationships
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Our consultants possess specialized knowledge in payments, fintech, and financial services, making worldwide banking more accessible and secure for your business.
+              We deliver the EPOS approach outlined for 2025—listening first, qualifying every requirement, and introducing you to partners that can execute.
             </p>
           </div>
         </div>
@@ -132,7 +127,7 @@ export default function WhyUs() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             {processSteps.map((step, idx) => (
               <div key={idx} className="relative">
                 <div className="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg w-full p-6 mb-4 shadow-lg shadow-cyan-500/30">

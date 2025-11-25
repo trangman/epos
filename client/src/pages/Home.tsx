@@ -6,115 +6,49 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import { pages, getStructuredData, getFullUrl } from "@/lib/seo";
+import { serviceOfferings } from "@/data/services";
 
 export default function Home() {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
-  const services = [
-    {
-      title: "EPOS Payments",
-      description: "One stop for payments, providing comprehensive global payment network. Facilitates local currency delivery to bank accounts in most markets.",
-      features: [
-        "Local and cross border payment solutions",
-        "Multi-currency support with integrated FX",
-        "Merchant acquiring for Visa, Mastercard and UnionPay"
-      ]
-    },
-    {
-      title: "EPOS Connect",
-      description: "Fast-track onboarding system designed to manage customer requirements and risk efficiently with extensive AML compliance.",
-      features: [
-        "Automated AML/CTF/ATF compliance workflows",
-        "Real-time transaction monitoring and risk assessment",
-        "End-to-end customer lifecycle management"
-      ]
-    },
-    {
-      title: "EPOS FX",
-      description: "Multi-currency foreign exchange with physical delivery across markets, providing deep liquidity for instant exchange and delivery.",
-      features: [
-        "Real-time FX across global markets",
-        "OTC trading for tailored currency solutions",
-        "Speed, transparency and financial flexibility"
-      ]
-    },
-    {
-      title: "EPOS Cards",
-      description: "Global issuance of Mastercard and Visa card programs including debit, credit, and prepaid cards in multi-currency options.",
-      features: [
-        "Global issuance of Visa and Mastercard programs",
-        "Multi-currency and single-currency card options",
-        "Virtual and physical cards"
-      ]
-    },
-    {
-      title: "EPOS Wealth",
-      description: "Wealth management services adhering to IOSCO principles, enabling distribution and issuance of securities.",
-      features: [
-        "Global issuance and distribution of securities",
-        "Support for traditional, digital, and tokenized assets",
-        "IOSCO compliant framework"
-      ]
-    },
-    {
-      title: "EPOS HPP",
-      description: "Hosted Payment Page allowing merchants to accept various payment methods with easy integration.",
-      features: [
-        "Easy integration into existing platforms",
-        "Support for card payments, bank wires, and Web3",
-        "Seamless transaction experience"
-      ]
-    }
-  ];
-
   const whyUs = [
     {
-      title: "Comprehensive Solutions",
-      description: "Access a full suite of payment and financial services designed to meet diverse business needs across industries and geographies."
+      title: "Tier 1 Network Access",
+      description: "Connect directly with prestigious Tier 1 banks, EMIs, asset managers, and payment gateways through EPOS' curated partner ecosystem."
     },
     {
       title: "Global Reach",
-      description: "Our extensive network spans multiple markets and currencies, enabling seamless international transactions and local compliance."
+      description: "Deliver local currency to bank accounts in most markets, leveraging connections to the Bank of England via Faster Payments and to the European Central Bank for Instant SEPA."
     },
     {
-      title: "Advanced Compliance",
-      description: "Robust AML/KYC frameworks ensure regulatory compliance and risk management across all jurisdictions and transaction types."
+      title: "Trusted Infrastructure",
+      description: "Work with FCA-regulated UK EMIs and partners that safeguard client funds in segregated accounts while supporting SWIFT, SEPA, and faster payment rails."
     },
     {
       title: "Expert Support",
-      description: "Dedicated team with deep expertise in payments, fintech, and financial services ready to support your business growth."
+      description: "Benefit from a team with over a decade of experience in FX, payments, and financial services that listens first and tailors every engagement."
     },
     {
-      title: "Flexible Integration",
-      description: "Seamless integration with existing systems and platforms, designed for businesses of all sizes and technical capabilities."
+      title: "Comprehensive Coverage",
+      description: "Access real-time tracking across 40+ collection currencies and 100+ payout currencies through a single, global payment network."
     }
   ];
 
   const processSteps = [
     {
       number: "1",
-      title: "Consultation",
-      description: "Discuss your payment and financial service requirements with our expert team."
+      title: "Qualification",
+      description: "We listen to understand each client's demands and capture the details we need through a structured questionnaire."
     },
     {
       number: "2",
-      title: "Assessment",
-      description: "We evaluate your business needs and identify the best EPOS solutions for you."
+      title: "Introduction",
+      description: "After review, we introduce you to the financial institutions best aligned with your profile, risk appetite, and objectives."
     },
     {
       number: "3",
-      title: "Proposal",
-      description: "Receive a tailored proposal with recommended services and implementation timeline."
-    },
-    {
-      number: "4",
-      title: "Integration",
-      description: "Our team guides you through seamless integration and configuration of selected services."
-    },
-    {
-      number: "5",
-      title: "Activation",
-      description: "Go live with your payment solutions and begin processing transactions immediately."
+      title: "Continued Assistance",
+      description: "We remain involved to ensure you secure the right mix of solutions and stay supported as your business evolves."
     }
   ];
 
@@ -163,10 +97,10 @@ export default function Home() {
           <div className="max-w-3xl">
             <p className="text-cyan-300 font-semibold mb-4 text-lg tracking-widest">GLOBAL PAYMENT SOLUTIONS</p>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Payments, FX & Financial Services. Made Simple.
+              Tier 1 Payments, FX & Institutional Partnerships.
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              EPOS provides comprehensive global payment solutions, multi-currency support, and advanced financial services designed to help your business grow and expand internationally.
+              EPOS specializes in connecting clients with leading banks, asset managers, EMIs, processing houses, and payment gateways to optimize payment workflows, reduce FX costs, and manage currency exposures.
             </p>
             <Link href="/contact">
               <a>
@@ -185,12 +119,12 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive payment and financial solutions designed to meet the diverse needs of modern businesses worldwide.
+              Comprehensive payment and financial solutions built on strategic Tier 1 partnerships and a global delivery network.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, idx) => (
+            {serviceOfferings.map((service, idx) => (
               <div key={idx} className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition border border-gray-200">
                 <h3 className="text-2xl font-bold mb-3 text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
@@ -235,11 +169,11 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">How It Works</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Get started with EPOS in 5 simple steps.
+              Get started with EPOS in 3 collaborative steps.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-4">
+          <div className="grid md:grid-cols-3 gap-6">
             {processSteps.map((step, idx) => (
               <div key={idx} className="relative">
                 <div className="bg-gradient-to-br from-amber-400 to-amber-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
