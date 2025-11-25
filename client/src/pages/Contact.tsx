@@ -124,9 +124,14 @@ export default function Contact() {
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-900">Call Us</h3>
               <p className="text-gray-600 mb-2">Available Mon - Fri, 9am - 6pm GMT.</p>
-              <a href="tel:+447520654325" className="text-cyan-400 hover:text-cyan-300 font-semibold">
-                +44 7520 654 325
-              </a>
+              <div className="space-y-2">
+                <a href="tel:+447520654325" className="block text-cyan-400 hover:text-cyan-300 font-semibold">
+                  UK: +44 7520 654 325
+                </a>
+                <a href="tel:+19177303757" className="block text-cyan-400 hover:text-cyan-300 font-semibold">
+                  US: +1 (917) 730-3757
+                </a>
+              </div>
             </div>
 
             <div className="flex flex-col items-center text-center">
