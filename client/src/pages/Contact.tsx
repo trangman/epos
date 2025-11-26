@@ -264,12 +264,10 @@ export default function Contact() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
                 >
                   <option value="">Select an option</option>
-                  <option value="payments">EPOS Payments</option>
-                  <option value="connect">EPOS Connect</option>
-                  <option value="fx">EPOS FX</option>
-                  <option value="cards">EPOS Cards</option>
-                  <option value="wealth">EPOS Wealth</option>
-                  <option value="hpp">EPOS HPP</option>
+                  <option value="payments">EPOS Payments - Local & Cross-Border Payments</option>
+                  <option value="connect">EPOS Connect - Compliance Solutions</option>
+                  <option value="fx">EPOS FX - FX Solution</option>
+                  <option value="cards">EPOS Cards - Card Issuance Program</option>
                 </select>
               </div>
 

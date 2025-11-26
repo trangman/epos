@@ -31,17 +31,17 @@ export default function WhyUs() {
 
   const processSteps = [
     {
-      number: "01",
+      number: "1",
       title: "Qualification",
       description: "We listen to each client's demands and standardize requirements with a detailed questionnaire."
     },
     {
-      number: "02",
+      number: "2",
       title: "Introduction",
       description: "We arrange introductions to the institutions whose acceptance criteria, appetite, and capabilities best match your profile."
     },
     {
-      number: "03",
+      number: "3",
       title: "Continued Assistance",
       description: "We stay engaged to ensure you secure the right mix of solutions and remain supported as your business evolves."
     }
